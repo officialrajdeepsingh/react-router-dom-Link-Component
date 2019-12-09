@@ -36,7 +36,15 @@ export default class Cards extends Component {
 
                       {/* Link tag With out parameter */}
 
-                      <Link to="/about">About
+                    {/* Link tag With out parameter */}
+                      {/* <Link to="/about">About</Link> */}
+      
+                        <Link   to={
+                                      {     
+                                        pathname: '/read',
+                                        state:this.state
+                                      }
+                         }>
                      
                             <Card.Link  >Another Link</Card.Link>
 
